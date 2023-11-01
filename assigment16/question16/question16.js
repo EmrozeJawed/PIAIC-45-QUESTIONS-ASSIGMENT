@@ -1,0 +1,16 @@
+"use strict";
+let guestList = ["ALi", 'Ahmed', "Hamza", "Hasnain",];
+console.log(guestList);
+let cannotAttend = "Hasnain";
+console.log(cannotAttend + " " + "cannot make it, for dinner");
+let newGuest = "Bilal";
+guestList[guestList.indexOf(cannotAttend)] = newGuest;
+guestList.map((item) => console.log(`Dear ${item}, you are invited to dinner tonight We would be honored to have you join us`));
+guestList.map((item) => console.log(`Dear ${item} I found a bigger dinner table,`));
+let guestBegin = "Usaim";
+guestList.unshift(guestBegin);
+let middleGuest = "kabir";
+let middleIndex = guestList.length / 2.;
+guestList.splice(middleIndex, 0, middleGuest);
+guestList.push("Shoaib");
+guestList.map((item) => console.log(`Dear ${item}, you are invited to dinner tonight We would be honored to have you join us`));

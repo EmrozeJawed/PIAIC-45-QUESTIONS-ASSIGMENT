@@ -1,0 +1,12 @@
+"use strict";
+let guestList = ["ALi", 'Ahmed', "Hamza", "Hasnain",];
+let cannotAttend = "Hasnain";
+let newGuest = "Bilal";
+guestList[guestList.indexOf(cannotAttend)] = newGuest;
+let guestBegin = "Usaim";
+guestList.unshift(guestBegin);
+let middleGuest = "kabir";
+let middleIndex = guestList.length / 2.;
+guestList.splice(middleIndex, 0, middleGuest);
+guestList.push("Shoaib");
+console.log(guestList.length + " " + "peoples" + " " + "are invited to dinner");
